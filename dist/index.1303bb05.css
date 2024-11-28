@@ -19,7 +19,7 @@ body {
 
 .header {
   color: #000;
-  background-color: #6a9c89;
+  background-color: #daa520;
   height: 70px;
   margin-top: 2rem;
   padding: 25px;
@@ -71,6 +71,7 @@ body {
 
 .grid {
   text-align: center;
+  background-color: #daa520;
   grid-template-rows: repeat(7, 1fr);
   grid-template-columns: repeat(6, 1fr);
   width: 90%;
@@ -95,6 +96,10 @@ body {
   background-color: #c4dad2;
   height: 2rem;
   font-size: 18px;
+}
+
+.table {
+  margin: 1.4rem;
 }
 
 @media (width <= 680px) {

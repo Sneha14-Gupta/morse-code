@@ -16,7 +16,7 @@ body {
 }
 .header {
   height: 70px;
-  background-color: #6a9c89;
+  background-color: #daa520;
   color: black;
   font-family: sans-serif;
   margin-top: 2rem;
@@ -71,6 +71,8 @@ p {
   text-align: center;
   width: 90%;
   margin-left: 4.5rem;
+  background-color: #daa520;
+  
 }
 .a {
   margin-top: 10px;
@@ -88,6 +90,9 @@ p {
   letter-spacing: 3px;
   background-color: #c4dad2;
   height: 2rem;
+}
+.table{
+  margin:1.4rem;
 }
 
 @media (max-width: 680px) {
