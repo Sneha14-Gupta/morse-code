@@ -7,11 +7,13 @@
 .flex {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   display: flex;
 }
 
 body {
   background-color: #16423c;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -32,14 +34,14 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 15px;
+  padding: 3rem;
   display: flex;
 }
 
 .text, .morse {
   flex-direction: column;
   width: 50%;
-  margin-top: 20px;
-  margin-left: 30px;
+  margin: 3rem;
   font-weight: 400;
   display: flex;
 
@@ -60,9 +62,9 @@ body {
   border: none;
   border-radius: 10px;
   outline: 1px solid #000;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 30px;
-  padding: 20px;
   font-size: 20px;
   font-weight: 800;
 }
@@ -93,5 +95,51 @@ body {
   background-color: #c4dad2;
   height: 2rem;
   font-size: 18px;
+}
+
+@media (width <= 680px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    & h1 {
+      text-align: center;
+      width: 20rem;
+      margin-left: 0;
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+
+    & p {
+      text-align: center;
+      width: 20rem;
+      margin-left: 0;
+      font-size: .8rem;
+      font-weight: 300;
+    }
+  }
+
+  .converter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+
+    & .text, & .morse {
+      width: 90%;
+      height: 30%;
+    }
+  }
+
+  .grid {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .table {
+    margin-left: -4rem;
+  }
 }
 /*# sourceMappingURL=index.1303bb05.css.map */

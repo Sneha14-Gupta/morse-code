@@ -6,9 +6,11 @@
 .flex {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 body {
+  width: 100vw;
   background-color: #16423c;
   overflow-x: hidden;
 }
@@ -28,8 +30,9 @@ p {
 .converter {
   margin-top: 15px;
   height: 100%;
-  width: 100%;
+  width:100%;
   display: flex;
+  padding: 3rem;
 }
 .text,
 .morse {
@@ -37,8 +40,7 @@ p {
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  margin-top: 20px;
-  margin-left: 30px;
+  margin: 3rem;
   div {
     margin-bottom: 0.5rem;
   }
@@ -57,9 +59,9 @@ p {
   border: none;
   border-radius: 10px;
   margin-bottom: 30px;
-  padding: 20px;
   font-size: 20px;
   font-weight: 800;
+  width: 80%;
 }
 .grid {
   display: grid;
@@ -85,4 +87,48 @@ p {
   letter-spacing: 3px;
   background-color: #c4dad2;
   height: 2rem;
+}
+
+@media (max-width: 680px) {
+  body{
+    overflow-x: hidden;
+  }
+  .header {
+    h1 {
+      width: 20rem;
+      margin-left: 0rem;
+      font-size: 1.3rem;
+      font-weight: 900; 
+      text-align: center;
+    }
+    p {
+      width: 20rem;
+      margin-left: 0rem;
+      font-weight: 300;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+  .converter {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .text,
+    .morse {
+
+      width: 90%;
+      height: 30%;
+    }
+  }
+  .grid {
+    padding: 10px;
+    width: 80%;
+  }
+  .table{
+    margin-left:-4rem ;
+  }
+  
+  
 }
